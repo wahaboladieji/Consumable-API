@@ -23,7 +23,7 @@ export const config = {
 
   rateLimit: {
     windowSeconds: parseEnvInt("RATE_LIMIT_WINDOW_SECONDS", 60),
-    maxRequests: parseEnvInt("RATE_LIMIT_MAX_REQUESTS", 100),
+    maxRequests: parseEnvInt("RATE_LIMIT_MAX_REQUESTS", 90),
   },
 
   seed: {
