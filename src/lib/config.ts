@@ -15,7 +15,7 @@ export const config = {
   env: process.env.NODE_ENV || "development",
   port: parseEnvInt("PORT", 3000),
   databaseUrl: process.env.DATABASE_URL || "",
-  
+
   pagination: {
     defaultLimit: parseEnvInt("PAGINATION_DEFAULT_LIMIT", 20),
     maxLimit: parseEnvInt("PAGINATION_MAX_LIMIT", 100),
@@ -23,7 +23,7 @@ export const config = {
 
   rateLimit: {
     windowSeconds: parseEnvInt("RATE_LIMIT_WINDOW_SECONDS", 60),
-    maxRequests: parseEnvInt("RATE_LIMIT_MAX_REQUESTS", 90),
+    maxRequests: parseEnvInt("RATE_LIMIT_MAX_REQUESTS", 80),
   },
 
   seed: {
